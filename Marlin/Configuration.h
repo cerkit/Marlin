@@ -487,6 +487,7 @@
   //#define DEFAULT_Ki 1.54
   //#define DEFAULT_Kd 76.55
 
+  // MicroSwiss All Metal Hotend
   #define DEFAULT_Kp 31.80
   #define DEFAULT_Ki 3.63
   #define DEFAULT_Kd 69.68
@@ -1104,12 +1105,12 @@
 #define Y_BED_SIZE 235
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
-#define X_MIN_POS 0
-#define Y_MIN_POS 0
+#define X_MIN_POS -5 // MicroSwiss Direct Drive mod caused offset to be changed
+#define Y_MIN_POS -19
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE
 #define Y_MAX_POS Y_BED_SIZE
-#define Z_MAX_POS 250
+#define Z_MAX_POS 210
 
 /**
  * Software Endstops
